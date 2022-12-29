@@ -1,11 +1,12 @@
 /* _content/Assos.Web/Views/Shared/_Layout.cshtml.rz.scp.css */
-/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
+ Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. 
 
 a.navbar-brand[b-bnp162jv4t] {
   white-space: normal;
   text-align: center;
   word-break: break-all;
+  width:%100;
 }
 
 a[b-bnp162jv4t] {

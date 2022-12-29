@@ -16,9 +16,7 @@ C:\Users\fayik\source\repos\AssosRestaurant\Assos.Web\obj\Debug\net6.0\Assos.Web
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.Web\obj\Debug\net6.0\Assos.Web.RazorAssemblyInfo.cs
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.Web\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.Web\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\fayik\source\repos\AssosRestaurant\Assos.Web\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.Web\obj\Debug\net6.0\scopedcss\bundle\Assos.Web.styles.css
-C:\Users\fayik\source\repos\AssosRestaurant\Assos.Web\obj\Debug\net6.0\scopedcss\projectbundle\Assos.Web.bundle.scp.css
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.Web\obj\Debug\net6.0\Assos.Web.dll
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.Web\obj\Debug\net6.0\refint\Assos.Web.dll
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.Web\obj\Debug\net6.0\Assos.Web.pdb

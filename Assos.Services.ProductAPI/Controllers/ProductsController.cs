@@ -1,5 +1,7 @@
 ﻿using Assos.Services.ProductAPI.Model.Dto;
 using Assos.Services.ProductAPI.Repository;
+using Mango.Services.Identity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -20,7 +22,7 @@ namespace Assos.Services.ProductAPI.Controllers
             this._response = new ResponseDto();
         }
 
-
+        [Authorize]
         [HttpGet]
         public async Task<object> Get()
         {
@@ -39,6 +41,7 @@ namespace Assos.Services.ProductAPI.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         [Route("{id}")]
         public async Task<object> Get(int id)
         {
@@ -57,6 +60,7 @@ namespace Assos.Services.ProductAPI.Controllers
 
 
         [HttpPost]
+        [Authorize]
         public async Task<object> Post([FromBody]ProductDto productDto)
         {
             try
@@ -90,19 +94,21 @@ namespace Assos.Services.ProductAPI.Controllers
             return _response;
         }
 
-
+        [Authorize(Roles ="Admin")]
         [HttpDelete]
+        [Route("{id}")]
         public async Task<object> Delete(int id)
         {
             try
             {
-                bool isSuccess  = await _productRepository.Deleteproduct(id);
+                bool isSuccess = await _productRepository.Deleteproduct(id);
                 _response.Result = isSuccess;
             }
             catch (Exception ex)
             {
                 _response.IsSuccess = false;
-                _response.ErrorMessage = new List<string>() { ex.ToString() };
+                _response.ErrorMessage
+                     = new List<string>() { ex.ToString() };
             }
             return _response;
         }

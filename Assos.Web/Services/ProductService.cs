@@ -17,11 +17,11 @@ namespace Assos.Web.Services
 
         public async Task<T> CreateProductAsync<T>(ProductDto productDto)
         {
-             return await this.SendAsync<T>(new ApiRequest()
+            return await this.SendAsync<T>(new ApiRequest()
             {
                 ApiType = SD.ApiType.POST,
                 Data = productDto,
-                Url = SD.ProductAPIBase + "/api/products",
+                Url = SD.ProductAPIBase + "/api/Products",
                 AccessToken = ""
             });
         }
@@ -50,7 +50,7 @@ namespace Assos.Web.Services
         {
             return await this.SendAsync<T>(new ApiRequest()
             {
-                ApiType = SD.ApiType.PUT,
+                ApiType = SD.ApiType.GET,
                 Url = SD.ProductAPIBase + "/api/products/"+id,
                 AccessToken = ""
             });
@@ -58,11 +58,11 @@ namespace Assos.Web.Services
 
         public async Task<T> UpdateProductAsync<T>(ProductDto productDto)
         {
-             return await this.SendAsync<T>(new ApiRequest()
+            return await this.SendAsync<T>(new ApiRequest()
             {
                 ApiType = SD.ApiType.PUT,
-                 Data = productDto,
-                 Url = SD.ProductAPIBase + "/api/products",
+                Data = productDto,
+                Url = SD.ProductAPIBase + "/api/products",
                 AccessToken = ""
             });
         }

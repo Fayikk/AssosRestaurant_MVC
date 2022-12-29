@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PT9bONm45jqq5ZGpReW1IJKWm4ZbN82adLEAvgXHIS0=",
+  "Hash": "9W+nOG/WRThTUJm9xjZbVGP5LV/kgBdI60Uok4DbZMk=",
   "Source": "Assos.Web",
   "BasePath": "_content/Assos.Web",
   "Mode": "Default",
@@ -16,40 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "C:\\Users\\fayik\\source\\repos\\AssosRestaurant\\Assos.Web\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Assos.Web.styles.css",
-      "SourceId": "Assos.Web",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\fayik\\source\\repos\\AssosRestaurant\\Assos.Web\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
-      "BasePath": "_content/Assos.Web",
-      "RelativePath": "Assos.Web.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\fayik\\source\\repos\\AssosRestaurant\\Assos.Web\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Assos.Web.styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\fayik\\source\\repos\\AssosRestaurant\\Assos.Web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Assos.Web.bundle.scp.css",
-      "SourceId": "Assos.Web",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\fayik\\source\\repos\\AssosRestaurant\\Assos.Web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/Assos.Web",
-      "RelativePath": "Assos.Web.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\fayik\\source\\repos\\AssosRestaurant\\Assos.Web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Assos.Web.bundle.scp.css"
-    },
     {
       "Identity": "C:\\Users\\fayik\\source\\repos\\AssosRestaurant\\Assos.Web\\wwwroot\\css\\site.css",
       "SourceId": "Assos.Web",
@@ -83,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\fayik\\source\\repos\\AssosRestaurant\\Assos.Web\\wwwroot\\Images\\images.jpg",
+      "SourceId": "Assos.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\fayik\\source\\repos\\AssosRestaurant\\Assos.Web\\wwwroot\\",
+      "BasePath": "_content/Assos.Web",
+      "RelativePath": "Images/images.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\images.jpg"
     },
     {
       "Identity": "C:\\Users\\fayik\\source\\repos\\AssosRestaurant\\Assos.Web\\wwwroot\\js\\site.js",

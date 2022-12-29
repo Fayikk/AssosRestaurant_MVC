@@ -34,27 +34,27 @@ namespace Assos.Web
             services.AddScoped<IProductService, ProductService>();
             services.AddControllersWithViews();
 
-            //services.AddAuthentication(options =>
-            //{
-            //    options.DefaultScheme = "Cookies";
-            //    options.DefaultChallengeScheme = "oidc";
-            //})
-            //    .AddCookie("Cookies", c => c.ExpireTimeSpan = TimeSpan.FromMinutes(10))
-            //    .AddOpenIdConnect("oidc", options =>
-            //    {
-            //        options.Authority = Configuration["ServiceUrls:IdentityAPI"];
-            //        options.GetClaimsFromUserInfoEndpoint = true;
-            //        options.ClientId = "mango";
-            //        options.ClientSecret = "secret";
-            //        options.ResponseType = "code";
-            //        options.ClaimActions.MapJsonKey("role", "role", "role");
-            //        options.ClaimActions.MapJsonKey("sub", "sub", "sub");
-            //        options.TokenValidationParameters.NameClaimType = "name";
-            //        options.TokenValidationParameters.RoleClaimType = "role";
-            //        options.Scope.Add("mango");
-            //        options.SaveTokens = true;
+            services.AddAuthentication(options =>
+            {
+                options.DefaultScheme = "Cookies";
+                options.DefaultChallengeScheme = "oidc";
+            })
+                .AddCookie("Cookies", c => c.ExpireTimeSpan = TimeSpan.FromMinutes(10))
+                .AddOpenIdConnect("oidc", options =>
+                {
+                    options.Authority = Configuration["ServiceUrls:IdentityAPI"];
+                    options.GetClaimsFromUserInfoEndpoint = true;
+                    options.ClientId = "assos";
+                    options.ClientSecret = "secret";
+                    options.ResponseType = "code";
+                    options.ClaimActions.MapJsonKey("role", "role", "role");
+                    options.ClaimActions.MapJsonKey("sub", "sub", "sub");
+                    options.TokenValidationParameters.NameClaimType = "name";
+                    options.TokenValidationParameters.RoleClaimType = "role";
+                    options.Scope.Add("assos");
+                    options.SaveTokens = true;
 
-            //    });
+                });
 
         }
 

@@ -45,6 +45,7 @@ namespace Assos.Services.ProductAPI.Repository
                     return false;
                 }
                 _db.Products.Remove(product);
+                await _db.SaveChangesAsync();
                 return true;
             }
             catch (Exception)
