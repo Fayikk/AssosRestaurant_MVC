@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Assos.Services.ProductAPI;
 using Assos.Services.ProductAPI.DbContexts;
 using Assos.Services.ProductAPI.Repository;
@@ -17,8 +13,12 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace API
+namespace Assos.Services.ProductAPI
 {
     public class Startup
     {
@@ -32,8 +32,10 @@ namespace API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options => 
+
+            services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
 
             IMapper mapper = MappingProfiles.RegisterMaps().CreateMapper();
             services.AddSingleton(mapper);
@@ -44,12 +46,13 @@ namespace API
             services.AddAuthentication("Bearer")
                 .AddJwtBearer("Bearer", options =>
                 {
-                    options.Authority = "https://localhost:44354/";
+
+                    options.Authority = "https://localhost:44365/";
                     options.TokenValidationParameters = new TokenValidationParameters
                     {
                         ValidateAudience = false
-
                     };
+
                 });
 
             services.AddAuthorization(options =>
@@ -57,13 +60,13 @@ namespace API
                 options.AddPolicy("ApiScope", policy =>
                 {
                     policy.RequireAuthenticatedUser();
-                    policy.RequireClaim("scope","assos");
+                    policy.RequireClaim("scope", "mango");
                 });
             });
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Assos.Services.ProductAPI", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Mango.Services.ProductAPI", Version = "v1" });
                 c.EnableAnnotations();
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
@@ -93,6 +96,7 @@ namespace API
                 });
             });
 
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -102,12 +106,13 @@ namespace API
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebAPIv5 v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Mango.Services.ProductAPI v1"));
             }
 
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
+
             app.UseRouting();
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

@@ -398,3 +398,10 @@ C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.ProductAPI\bin\Debug\
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.ProductAPI\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.ProductAPI\bin\Debug\net6.0\Assos.Services.Identity.dll
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.ProductAPI\bin\Debug\net6.0\Assos.Services.Identity.pdb
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.ProductAPI\bin\Debug\net6.0\System.Web.Mvc.dll
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.ProductAPI\bin\Debug\net6.0\System.Web.Razor.dll
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.ProductAPI\bin\Debug\net6.0\System.Web.Helpers.dll
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.ProductAPI\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.ProductAPI\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.ProductAPI\bin\Debug\net6.0\System.Web.WebPages.dll
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.ProductAPI\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll

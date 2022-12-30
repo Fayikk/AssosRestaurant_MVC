@@ -2,6 +2,8 @@ using Assos.Services.Identity;
 using Assos.Services.Identity.DbContexts;
 using Assos.Services.Identity.Initializer;
 using Assos.Services.Identity.Models;
+using Assos.Services.Identity.Services;
+using Duende.IdentityServer.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -45,7 +47,7 @@ namespace Mango.Services.Identity
 
 
             services.AddScoped<IDbInitializer, DbInitializer>();
-           
+            services.AddScoped<IProfileService, ProfileService>();
 
             builder.AddDeveloperSigningCredential();
 
@@ -53,7 +55,7 @@ namespace Mango.Services.Identity
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env,IDbInitializer dbInitializer)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IDbInitializer dbInitializer)
         {
             if (env.IsDevelopment())
             {

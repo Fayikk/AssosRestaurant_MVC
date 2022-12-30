@@ -1,7 +1,7 @@
 ﻿using Assos.Services.Identity.DbContexts;
 using Assos.Services.Identity.Models;
 using IdentityModel;
-using Mango.Services.Identity;
+using Assos.Services.Identity;
 using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
 

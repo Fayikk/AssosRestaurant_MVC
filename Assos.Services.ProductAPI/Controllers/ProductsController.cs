@@ -1,6 +1,6 @@
 ﻿using Assos.Services.ProductAPI.Model.Dto;
 using Assos.Services.ProductAPI.Repository;
-using Mango.Services.Identity;
+using Assos.Services.Identity;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

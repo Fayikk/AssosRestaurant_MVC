@@ -388,3 +388,10 @@ C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.Identity\obj\Debug\ne
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.Identity\obj\Debug\net6.0\Assos.Services.Identity.genruntimeconfig.cache
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.Identity\obj\Debug\net6.0\ref\Assos.Services.Identity.dll
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.Identity\bin\Debug\net6.0\keys\is-signing-key-742A8784415D3C1CB1D08A7C56C1EA87.json
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.Identity\bin\Debug\net6.0\System.Web.Mvc.dll
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.Identity\bin\Debug\net6.0\System.Web.Razor.dll
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.Identity\bin\Debug\net6.0\System.Web.Helpers.dll
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.Identity\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.Identity\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.Identity\bin\Debug\net6.0\System.Web.WebPages.dll
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.Identity\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll

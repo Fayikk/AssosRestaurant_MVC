@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Mango.Services.Identity
+namespace Assos.Services.Identity
 {
     public static class SD
     {
@@ -43,8 +43,13 @@ namespace Mango.Services.Identity
                     ClientId="assos",
                     ClientSecrets= { new Secret("secret".Sha256())},
                     AllowedGrantTypes = GrantTypes.Code,
-                    RedirectUris = { "https://localhost:44356/signin-oidc" },
-                    PostLogoutRedirectUris = { "https://localhost:44356/signout-callback-oidc" },
+                    //RedirectUris={ "https://localhost:44378/signin-oidc" },
+                    //PostLogoutRedirectUris={"https://localhost:44378/signout-callback-oidc" },
+                     RedirectUris={ "https://localhost:44359/signin-oidc" },
+                    PostLogoutRedirectUris={"https://localhost:44359/signout-callback-oidc" },
+
+
+
                     AllowedScopes=new List<string>
                     {
                         IdentityServerConstants.StandardScopes.OpenId,

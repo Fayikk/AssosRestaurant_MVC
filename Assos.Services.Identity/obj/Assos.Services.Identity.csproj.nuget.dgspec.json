@@ -44,6 +44,10 @@
               "target": "Package",
               "version": "[5.1.1, )"
             },
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.2.9, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.0-preview.3.21201.13, )"
