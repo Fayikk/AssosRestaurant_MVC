@@ -354,3 +354,5 @@ C:\Users\fayik\source\repos\AssosRestaurant\Assos.Web\bin\Debug\net6.0\ru\Micros
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.Web\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.Web\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.Web\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.Web\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.Web\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
