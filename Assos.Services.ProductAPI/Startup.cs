@@ -47,7 +47,7 @@ namespace Assos.Services.ProductAPI
                 .AddJwtBearer("Bearer", options =>
                 {
 
-                    options.Authority = "https://localhost:44365/";
+                    options.Authority = "https://localhost:44356/";
                     options.TokenValidationParameters = new TokenValidationParameters
                     {
                         ValidateAudience = false
