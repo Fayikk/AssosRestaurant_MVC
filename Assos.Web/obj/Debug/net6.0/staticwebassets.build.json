@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9W+nOG/WRThTUJm9xjZbVGP5LV/kgBdI60Uok4DbZMk=",
+  "Hash": "MxK5dF0PDmy129Vxa8wqQW6KTFfEucIdw6XVuNC4zeA=",
   "Source": "Assos.Web",
   "BasePath": "_content/Assos.Web",
   "Mode": "Default",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\fayik\\source\\repos\\AssosRestaurant\\Assos.Web\\wwwroot\\css\\bootstrap-datetimepicker.css",
+      "SourceId": "Assos.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\fayik\\source\\repos\\AssosRestaurant\\Assos.Web\\wwwroot\\",
+      "BasePath": "_content/Assos.Web",
+      "RelativePath": "css/bootstrap-datetimepicker.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap-datetimepicker.css"
+    },
     {
       "Identity": "C:\\Users\\fayik\\source\\repos\\AssosRestaurant\\Assos.Web\\wwwroot\\css\\site.css",
       "SourceId": "Assos.Web",
@@ -66,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\images.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\fayik\\source\\repos\\AssosRestaurant\\Assos.Web\\wwwroot\\js\\bootstrap-datetimepicker.js",
+      "SourceId": "Assos.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\fayik\\source\\repos\\AssosRestaurant\\Assos.Web\\wwwroot\\",
+      "BasePath": "_content/Assos.Web",
+      "RelativePath": "js/bootstrap-datetimepicker.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bootstrap-datetimepicker.js"
     },
     {
       "Identity": "C:\\Users\\fayik\\source\\repos\\AssosRestaurant\\Assos.Web\\wwwroot\\js\\site.js",

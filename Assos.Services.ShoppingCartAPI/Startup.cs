@@ -1,4 +1,3 @@
-using Assos.Services.ShoppingCartAPI;
 using Assos.Services.ShoppingCartAPI.DbContexts;
 using Assos.Services.ShoppingCartAPI.Repository;
 using AutoMapper;
@@ -60,7 +59,7 @@ namespace Assos.Services.ShoppingCartAPI
                 options.AddPolicy("ApiScope", policy =>
                 {
                     policy.RequireAuthenticatedUser();
-                    policy.RequireClaim("scope", "mango");
+                    policy.RequireClaim("scope", "assos");
                 });
             });
 
@@ -105,7 +104,7 @@ namespace Assos.Services.ShoppingCartAPI
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Assos.Services.ShoppingCartAPI v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Mango.Services.ShoppingCartAPI v1"));
             }
 
             app.UseHttpsRedirection();

@@ -12,11 +12,11 @@ namespace Assos.Services.ProductAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductsController : ControllerBase
+    public class ProductsApiController : ControllerBase
     {
         private IProductRepository _productRepository;
         protected ResponseDto _response;
-        public ProductsController(IProductRepository productRepository)
+        public ProductsApiController(IProductRepository productRepository)
         {
             _productRepository = productRepository;
             this._response = new ResponseDto();

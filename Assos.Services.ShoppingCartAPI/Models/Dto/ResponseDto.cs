@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Assos.Services.ProductAPI.Model.Dto
+namespace Assos.Services.ShoppingCartAPI.Model.Dto
 {
     public class ResponseDto
     {

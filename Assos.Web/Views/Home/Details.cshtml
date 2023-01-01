@@ -1,4 +1,4 @@
-﻿@model ProductDto
+﻿@model Assos.Web.Models.ProductDto
 
 <form method="post">
     <input asp-for="ProductId" hidden />
@@ -9,7 +9,7 @@
                     <h1 class="text-white">@Model.Name</h1>
                 </div>
                 <div class="col-12 col-md-6 text-end">
-                    <h1 class="text-warning">@string.Format("{0:c}", Model.Price) </h1>
+                    <h1 class="text-warning"> @string.Format("{0:c}", Model.Price)</h1>
                 </div>
             </div>
             <div class="card-body">
@@ -30,7 +30,7 @@
                             </div>
                             <div class="row px-4">
                                 <input asp-for="Count" class="form-control" />
-                                <span asp-validation-for="Count" class="text-danger" ></span>
+                                <span asp-validation-for="Count" class="text-danger"></span>
                             </div>
                         </div>
                     </div>
@@ -43,14 +43,13 @@
                 <div class="col-12 col-md-6 ">
 
 
-                    <button type="submit" class="btn btn-info form-control btn-lg" style="height:50px;">Add to Cart</button>
+                    <button type="submit" class="btn btn-primary form-control btn-lg" style="height:50px;">Add to Cart</button>
                 </div>
             </div>
         </div>
     </div>
 </form>
 
-
 @section Scripts{
     <partial name="_ValidationScriptsPartial" />
-         }
+}

@@ -8,6 +8,8 @@ namespace Assos.Services.ShoppingCartAPI.Repository
         Task<CartDto> GetCartBuUserId(string userId);
         Task<CartDto> CreateUpdateCart(CartDto cartDto);
         Task<bool> RemoveFromCart(int carDetailsId);
+        Task<bool> ApplyCoupon(string userId, string couponCode);
+        Task<bool> RemoveCoupon(string userId);
         Task<bool> ClearCart(string userId);
 
     }
