@@ -63,3 +63,11 @@ C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.ShoppingCartAPI\obj\D
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.ShoppingCartAPI\obj\Debug\net6.0\Assos.Services.ShoppingCartAPI.pdb
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.ShoppingCartAPI\obj\Debug\net6.0\Assos.Services.ShoppingCartAPI.genruntimeconfig.cache
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.ShoppingCartAPI\obj\Debug\net6.0\ref\Assos.Services.ShoppingCartAPI.dll
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.ShoppingCartAPI\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.ShoppingCartAPI\bin\Debug\net6.0\Azure.Core.Amqp.dll
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.ShoppingCartAPI\bin\Debug\net6.0\Azure.Messaging.ServiceBus.dll
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.ShoppingCartAPI\bin\Debug\net6.0\Microsoft.Azure.Amqp.dll
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.ShoppingCartAPI\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.ShoppingCartAPI\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.ShoppingCartAPI\bin\Debug\net6.0\Assos.MessageBus.dll
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.ShoppingCartAPI\bin\Debug\net6.0\Assos.MessageBus.pdb

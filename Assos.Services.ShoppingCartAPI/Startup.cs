@@ -1,3 +1,4 @@
+using Assos.MessageBus;
 using Assos.Services.ShoppingCartAPI.DbContexts;
 using Assos.Services.ShoppingCartAPI.Repository;
 using AutoMapper;
@@ -40,6 +41,7 @@ namespace Assos.Services.ShoppingCartAPI
             services.AddSingleton(mapper);
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddScoped<ICartRepository, CartRepository>();
+            services.AddSingleton<IMessageBus, AzureServiceBusMessageBus>();
             services.AddControllers();
 
             services.AddAuthentication("Bearer")
