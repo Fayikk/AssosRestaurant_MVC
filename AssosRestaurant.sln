@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assos.Services.CouponAPI", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{20394C04-D032-483D-A144-CAEC53BD9E0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assos.MessageBus", "Assos.MessageBus\Assos.MessageBus.csproj", "{4B2BC93E-4259-4AFF-BFB0-0D7FA3253AE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assos.MessageBus", "Assos.MessageBus\Assos.MessageBus.csproj", "{4B2BC93E-4259-4AFF-BFB0-0D7FA3253AE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assos.Services.OrderAPI", "Assos.Services.OrderAPI\Assos.Services.OrderAPI.csproj", "{C3702883-90BC-4941-A48F-E4473D405251}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{4B2BC93E-4259-4AFF-BFB0-0D7FA3253AE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B2BC93E-4259-4AFF-BFB0-0D7FA3253AE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B2BC93E-4259-4AFF-BFB0-0D7FA3253AE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3702883-90BC-4941-A48F-E4473D405251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3702883-90BC-4941-A48F-E4473D405251}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3702883-90BC-4941-A48F-E4473D405251}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3702883-90BC-4941-A48F-E4473D405251}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +68,7 @@ Global
 		{6113598A-996F-48AD-A3F5-4DE1FE0B4FD1} = {AC3EE4AB-620E-485E-A883-5861D74D2FF0}
 		{28C9F35C-CD9F-40F7-A0DB-C646E8F96A22} = {AC3EE4AB-620E-485E-A883-5861D74D2FF0}
 		{4B2BC93E-4259-4AFF-BFB0-0D7FA3253AE8} = {20394C04-D032-483D-A144-CAEC53BD9E0A}
+		{C3702883-90BC-4941-A48F-E4473D405251} = {AC3EE4AB-620E-485E-A883-5861D74D2FF0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {498EFB9B-3467-4EE6-AE23-87524BE71353}
