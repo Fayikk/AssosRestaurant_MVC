@@ -13,7 +13,7 @@ namespace Assos.Services.OrderAPI.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime PickupDateTime { get; set; }
-        public DateTime OrderTime { get; set; }
+        public DateTime OrderTime { get; set; } = DateTime.Now;
         public string Phone { get; set; }
         public string Email { get; set; }
         public string CardNumber { get; set; }
