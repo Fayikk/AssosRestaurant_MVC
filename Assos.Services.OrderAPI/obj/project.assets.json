@@ -1754,6 +1754,20 @@
             "rid": "win"
           }
         }
+      },
+      "Assos.MessageBus/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Azure.Messaging.ServiceBus": "7.2.0-beta.2",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Assos.MessageBus.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Assos.MessageBus.dll": {}
+        }
       }
     }
   },
@@ -5479,10 +5493,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Assos.MessageBus/1.0.0": {
+      "type": "project",
+      "path": "../Assos.MessageBus/Assos.MessageBus.csproj",
+      "msbuildProject": "../Assos.MessageBus/Assos.MessageBus.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Assos.MessageBus >= 1.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 8.1.1",
       "Azure.Messaging.ServiceBus >= 7.2.0-beta.2",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.0-preview.3.21201.13",
@@ -5518,7 +5538,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\fayik\\source\\repos\\AssosRestaurant\\Assos.MessageBus\\Assos.MessageBus.csproj": {
+              "projectPath": "C:\\Users\\fayik\\source\\repos\\AssosRestaurant\\Assos.MessageBus\\Assos.MessageBus.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

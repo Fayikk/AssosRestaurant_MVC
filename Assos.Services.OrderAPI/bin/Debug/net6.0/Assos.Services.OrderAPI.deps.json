@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "Assos.Services.OrderAPI/1.0.0": {
         "dependencies": {
+          "Assos.MessageBus": "1.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
           "Azure.Messaging.ServiceBus": "7.2.0-beta.2",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.0-preview.3.21201.13",
@@ -959,6 +960,15 @@
             "fileVersion": "4.700.19.56404"
           }
         }
+      },
+      "Assos.MessageBus/1.0.0": {
+        "dependencies": {
+          "Azure.Messaging.ServiceBus": "7.2.0-beta.2",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "Assos.MessageBus.dll": {}
+        }
       }
     }
   },
@@ -1695,6 +1705,11 @@
       "sha512": "sha512-CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
+    },
+    "Assos.MessageBus/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

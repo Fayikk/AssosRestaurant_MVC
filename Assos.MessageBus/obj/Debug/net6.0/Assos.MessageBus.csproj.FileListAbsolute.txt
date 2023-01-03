@@ -1,11 +1,11 @@
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.MessageBus\bin\Debug\net6.0\Assos.MessageBus.deps.json
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.MessageBus\bin\Debug\net6.0\Assos.MessageBus.dll
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.MessageBus\bin\Debug\net6.0\Assos.MessageBus.pdb
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.MessageBus\obj\Debug\net6.0\Assos.MessageBus.csproj.AssemblyReference.cache
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.MessageBus\obj\Debug\net6.0\Assos.MessageBus.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.MessageBus\obj\Debug\net6.0\Assos.MessageBus.AssemblyInfoInputs.cache
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.MessageBus\obj\Debug\net6.0\Assos.MessageBus.AssemblyInfo.cs
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.MessageBus\obj\Debug\net6.0\Assos.MessageBus.csproj.CoreCompileInputs.cache
-C:\Users\fayik\source\repos\AssosRestaurant\Assos.MessageBus\bin\Debug\net6.0\Assos.MessageBus.deps.json
-C:\Users\fayik\source\repos\AssosRestaurant\Assos.MessageBus\bin\Debug\net6.0\Assos.MessageBus.dll
-C:\Users\fayik\source\repos\AssosRestaurant\Assos.MessageBus\bin\Debug\net6.0\Assos.MessageBus.pdb
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.MessageBus\obj\Debug\net6.0\Assos.MessageBus.dll
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.MessageBus\obj\Debug\net6.0\refint\Assos.MessageBus.dll
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.MessageBus\obj\Debug\net6.0\Assos.MessageBus.pdb

@@ -1,8 +1,10 @@
+using Assos.MessageBus;
 using Assos.Services.OrderAPI.DbContexts;
 using Assos.Services.OrderAPI.Extension;
 using Assos.Services.OrderAPI.Messaging;
 using Assos.Services.OrderAPI.Repository;
 using AutoMapper;
+using Mango.Services.OrderAPI.Messaging;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -42,20 +44,19 @@ namespace Assos.Services.OrderAPI
             //services.AddSingleton(mapper);
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddScoped<IOrderRepository, OrderRepository>();
-            //services.AddScoped<IAzureServiceBusConsumer,AzureServiceBusConsumer>();
 
             var optionBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
             optionBuilder.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             services.AddSingleton(new OrderRepository(optionBuilder.Options));
             services.AddSingleton<IAzureServiceBusConsumer, AzureServiceBusConsumer>();
-
+            services.AddSingleton<IMessageBus, AzureServiceBusMessageBus>();
             services.AddControllers();
 
             services.AddAuthentication("Bearer")
                 .AddJwtBearer("Bearer", options =>
                 {
 
-                    options.Authority = "https://localhost:44356/";
+                    options.Authority = "https://localhost:44365/";
                     options.TokenValidationParameters = new TokenValidationParameters
                     {
                         ValidateAudience = false
@@ -68,13 +69,13 @@ namespace Assos.Services.OrderAPI
                 options.AddPolicy("ApiScope", policy =>
                 {
                     policy.RequireAuthenticatedUser();
-                    policy.RequireClaim("scope", "assos");
+                    policy.RequireClaim("scope", "mango");
                 });
             });
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Assos.Services.CouponAPI", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Mango.Services.CouponAPI", Version = "v1" });
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
                     Description = @"Enter 'Bearer' [space] and your token",
@@ -113,7 +114,7 @@ namespace Assos.Services.OrderAPI
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Assos.Services.OrderAPI v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Mango.Services.OrderAPI v1"));
             }
 
             app.UseHttpsRedirection();
