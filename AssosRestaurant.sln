@@ -25,9 +25,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assos.Services.OrderAPI", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payments", "Payments", "{1AB5A1A2-42A6-4D69-95D6-1134B14D1AB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentProcessor", "PaymentProcessor\PaymentProcessor.csproj", "{A055C52C-79DC-4056-B5D1-63B561086BEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaymentProcessor", "PaymentProcessor\PaymentProcessor.csproj", "{A055C52C-79DC-4056-B5D1-63B561086BEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assos.ServicesPaymentAPI", "Assos.ServicesPaymentAPI\Assos.ServicesPaymentAPI.csproj", "{19E77C59-804D-4DAC-9F31-B37042F5DA18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assos.ServicesPaymentAPI", "Assos.ServicesPaymentAPI\Assos.ServicesPaymentAPI.csproj", "{19E77C59-804D-4DAC-9F31-B37042F5DA18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assos.Services.Email", "Assos.Services.Email\Assos.Services.Email.csproj", "{B6EDCBF6-8EC2-41C3-8A7F-6835641E6922}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,10 @@ Global
 		{19E77C59-804D-4DAC-9F31-B37042F5DA18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19E77C59-804D-4DAC-9F31-B37042F5DA18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19E77C59-804D-4DAC-9F31-B37042F5DA18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6EDCBF6-8EC2-41C3-8A7F-6835641E6922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6EDCBF6-8EC2-41C3-8A7F-6835641E6922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6EDCBF6-8EC2-41C3-8A7F-6835641E6922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6EDCBF6-8EC2-41C3-8A7F-6835641E6922}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,6 +91,7 @@ Global
 		{C3702883-90BC-4941-A48F-E4473D405251} = {AC3EE4AB-620E-485E-A883-5861D74D2FF0}
 		{A055C52C-79DC-4056-B5D1-63B561086BEB} = {1AB5A1A2-42A6-4D69-95D6-1134B14D1AB9}
 		{19E77C59-804D-4DAC-9F31-B37042F5DA18} = {AC3EE4AB-620E-485E-A883-5861D74D2FF0}
+		{B6EDCBF6-8EC2-41C3-8A7F-6835641E6922} = {AC3EE4AB-620E-485E-A883-5861D74D2FF0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {498EFB9B-3467-4EE6-AE23-87524BE71353}

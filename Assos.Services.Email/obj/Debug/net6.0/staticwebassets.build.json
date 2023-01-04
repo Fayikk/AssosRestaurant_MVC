@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "dJU3mx1hOZkV0rBiDz9tJsC3oLA7tNQ8QzrdMNISvY8=",
+  "Source": "Assos.Services.Email",
+  "BasePath": "_content/Assos.Services.Email",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

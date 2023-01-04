@@ -110,7 +110,7 @@ namespace Assos.Services.ShoppingCartAPI
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Mango.Services.ShoppingCartAPI v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Assos.Services.ShoppingCartAPI v1"));
             }
 
             app.UseHttpsRedirection();

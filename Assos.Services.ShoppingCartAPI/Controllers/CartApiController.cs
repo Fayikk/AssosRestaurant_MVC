@@ -20,12 +20,12 @@ namespace Assos.Services.ShoppingCartAPI.Controllers
         private readonly IMessageBus _messageBus;
         protected ResponseDto _response;
 
-        public CartAPIController(ICartRepository cartRepository, IMessageBus messageBus,ICouponRepository couponRepository)
+        public CartAPIController(ICartRepository cartRepository, IMessageBus messageBus, ICouponRepository couponRepository)
         {
             _cartRepository = cartRepository;
+            _couponRepository = couponRepository;
             _messageBus = messageBus;
             this._response = new ResponseDto();
-            _couponRepository = couponRepository;
         }
 
         [HttpGet("GetCart/{userId}")]
@@ -139,19 +139,18 @@ namespace Assos.Services.ShoppingCartAPI.Controllers
                 if (!string.IsNullOrEmpty(checkoutHeader.CouponCode))
                 {
                     CouponDto coupon = await _couponRepository.GetCoupon(checkoutHeader.CouponCode);
-                    if(checkoutHeader.DiscountTotal != coupon.DiscountAmount)
+                    if (checkoutHeader.DiscountTotal != coupon.DiscountAmount)
                     {
                         _response.IsSuccess = false;
-                        _response.ErrorMessage = new List<string>() { "Coupon price has changes,please confirm" };
-                        _response.DisplayMessage = "Coupon price has changed,please confirm";
+                        _response.ErrorMessage = new List<string>() { "Coupon Price has changed, please confirm" };
+                        _response.DisplayMessage = "Coupon Price has changed, please confirm";
                         return _response;
                     }
                 }
 
-
                 checkoutHeader.CartDetails = cartDto.CartDetails;
                 //logic to add message to process order.
-                await _messageBus.PublishMessage(checkoutHeader, "checkoutmessagetopic");
+                await _messageBus.PublishMessage(checkoutHeader, "checkoutqueue");
                 await _cartRepository.ClearCart(checkoutHeader.UserId);
             }
             catch (Exception ex)

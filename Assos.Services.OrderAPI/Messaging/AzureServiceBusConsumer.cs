@@ -13,7 +13,7 @@ using Assos.Services.OrderAPI.Repository;
 using Assos.Services.OrderAPI.Messaging;
 using Assos.Services.OrderAPI.Messages;
 
-namespace Mango.Services.OrderAPI.Messaging
+namespace Assos.Services.OrderAPI.Messaging
 {
     public class AzureServiceBusConsumer : IAzureServiceBusConsumer
     {
@@ -46,7 +46,7 @@ namespace Mango.Services.OrderAPI.Messaging
 
             var client = new ServiceBusClient(serviceBusConnectionString);
 
-            checkOutProcessor = client.CreateProcessor(checkoutMessageTopic, subscriptionCheckOut);
+            checkOutProcessor = client.CreateProcessor(checkoutMessageTopic);
             orderUpdatePaymentStatusProcessor = client.CreateProcessor(orderUpdatePaymentResultTopic, subscriptionCheckOut);
         }
 
@@ -122,7 +122,8 @@ namespace Mango.Services.OrderAPI.Messaging
                 CVV = orderHeader.CVV,
                 ExpiryMonthYear = orderHeader.ExpiryMonthYear,
                 OrderId = orderHeader.OrderHeaderId,
-                OrderTotal = orderHeader.OrderTotal
+                OrderTotal = orderHeader.OrderTotal,
+                Email = orderHeader.Email
             };
 
             try
