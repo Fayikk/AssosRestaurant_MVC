@@ -92,7 +92,7 @@ namespace Assos.Services.ProductAPI.Controllers
             return _response;
         }
 
-        [Authorize(Roles ="Admin")]
+        [Authorize]
         [HttpDelete]
         [Route("{id}")]
         public async Task<object> Delete(int id)
