@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Assos.Services.ProductAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/products")]
     [ApiController]
     public class ProductsApiController : ControllerBase
     {

@@ -45,7 +45,7 @@ namespace Assos.Web.Services
             return await this.SendAsync<T>(new ApiRequest()
             {
                 ApiType = SD.ApiType.GET,
-                Url = SD.ProductAPIBase + "/api/ProductsApi",
+                Url = SD.ProductAPIBase + "/api/products",
                 AccessToken = token
             });
         }
@@ -55,7 +55,7 @@ namespace Assos.Web.Services
             return await this.SendAsync<T>(new ApiRequest()
             {
                 ApiType = SD.ApiType.GET,
-                Url = SD.ProductAPIBase + "/api/ProductsApi/" + id,
+                Url = SD.ProductAPIBase + "/api/products/" + id,
                 AccessToken = token
             });
         }
