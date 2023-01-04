@@ -18,10 +18,10 @@ using Duende.IdentityServer.Services;
 using Duende.IdentityServer.Stores;
 using Duende.IdentityServer.Test;
 using Microsoft.AspNetCore.Identity;
-using Assos.Services.Identity.Models;
-using Assos.Services.Identity.MainModule.Account;
 using System.Collections.Generic;
 using System.Security.Claims;
+using Assos.Services.Identity.MainModule.Account;
+using Assos.Services.Identity.Models;
 
 namespace IdentityServerHost.Quickstart.UI
 {
@@ -34,37 +34,31 @@ namespace IdentityServerHost.Quickstart.UI
     [AllowAnonymous]
     public class AccountController : Controller
     {
-
-
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManager;
-        //private readonly TestUserStore _users;
         private readonly IIdentityServerInteractionService _interaction;
         private readonly IClientStore _clientStore;
         private readonly IAuthenticationSchemeProvider _schemeProvider;
         private readonly IEventService _events;
 
         public AccountController(
-           
             IIdentityServerInteractionService interaction,
             IClientStore clientStore,
             IAuthenticationSchemeProvider schemeProvider,
             IEventService events,
-            //TestUserStore users = null,
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
-            RoleManager<IdentityRole> roleManager
+            RoleManager<IdentityRole> roleInManager
             )
         {
             // if the TestUserStore is not in DI, then we'll just use the global users collection
             // this is where you would plug in your own custom identity management library (e.g. ASP.NET Identity)
-
             _interaction = interaction;
             _clientStore = clientStore;
             _schemeProvider = schemeProvider;
             _events = events;
-            _roleManager = roleManager;
+            _roleManager = roleInManager;
             _userManager = userManager;
             _signInManager = signInManager;
         }
@@ -126,19 +120,20 @@ namespace IdentityServerHost.Quickstart.UI
 
             if (ModelState.IsValid)
             {
-                var result = await _signInManager.PasswordSignInAsync(model.Username, model.Password, model.RememberLogin, lockoutOnFailure: false);
 
+                var result = await _signInManager.PasswordSignInAsync(model.Username, model.Password, model.RememberLogin, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
                     var user = await _userManager.FindByNameAsync(model.Username);
                     await _events.RaiseAsync(
                         new UserLoginSuccessEvent(user.UserName, user.Id, user.UserName,
-                            clientId: context?.Client.ClientId
-                            ));
-                    if(context!= null)
+                        clientId: context?.Client.ClientId));
+
+                    if (context != null)
                     {
                         return Redirect(model.ReturnUrl);
                     }
+
                     if (Url.IsLocalUrl(model.ReturnUrl))
                     {
                         return Redirect(model.ReturnUrl);
@@ -153,7 +148,7 @@ namespace IdentityServerHost.Quickstart.UI
                     }
                 }
 
-                await _events.RaiseAsync(new UserLoginFailureEvent(model.Username, "invalid credentials", clientId:context?.Client.ClientId));
+                await _events.RaiseAsync(new UserLoginFailureEvent(model.Username, "invalid credentials", clientId: context?.Client.ClientId));
                 ModelState.AddModelError(string.Empty, AccountOptions.InvalidCredentialsErrorMessage);
             }
 
@@ -162,7 +157,7 @@ namespace IdentityServerHost.Quickstart.UI
             return View(vm);
         }
 
-        
+
         /// <summary>
         /// Show logout page
         /// </summary>
@@ -196,6 +191,7 @@ namespace IdentityServerHost.Quickstart.UI
             {
                 // delete local authentication cookie
                 await _signInManager.SignOutAsync();
+
                 // raise the logout event
                 await _events.RaiseAsync(new UserLogoutSuccessEvent(User.GetSubjectId(), User.GetDisplayName()));
             }
@@ -376,7 +372,6 @@ namespace IdentityServerHost.Quickstart.UI
                 ExternalProviders = providers.ToArray()
             };
         }
-
         /*****************************************/
         /* helper APIs for the AccountController */
         /*****************************************/
