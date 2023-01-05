@@ -2,6 +2,7 @@
 using Assos.Services.ShoppingCartAPI.Messages;
 using Assos.Services.ShoppingCartAPI.Model.Dto;
 using Assos.Services.ShoppingCartAPI.Models.Dto;
+using Assos.Services.ShoppingCartAPI.RabbitMQSender;
 using Assos.Services.ShoppingCartAPI.Repository;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -18,13 +19,17 @@ namespace Assos.Services.ShoppingCartAPI.Controllers
         private readonly ICartRepository _cartRepository;
         private readonly ICouponRepository _couponRepository;
         private readonly IMessageBus _messageBus;
+        private readonly IRabbitMQCardMessageSender _rabbitMQCartMessageSender;
+
+
         protected ResponseDto _response;
 
-        public CartAPIController(ICartRepository cartRepository, IMessageBus messageBus, ICouponRepository couponRepository)
+        public CartAPIController(ICartRepository cartRepository, IMessageBus messageBus, ICouponRepository couponRepository,IRabbitMQCardMessageSender rabbitMQCardMessageSender)
         {
             _cartRepository = cartRepository;
             _couponRepository = couponRepository;
             _messageBus = messageBus;
+            _rabbitMQCartMessageSender = rabbitMQCardMessageSender;
             this._response = new ResponseDto();
         }
 
@@ -150,7 +155,10 @@ namespace Assos.Services.ShoppingCartAPI.Controllers
 
                 checkoutHeader.CartDetails = cartDto.CartDetails;
                 //logic to add message to process order.
-                await _messageBus.PublishMessage(checkoutHeader, "checkoutqueue");
+                //await _messageBus.PublishMessage(checkoutHeader, "checkoutqueue");
+
+
+                _rabbitMQCartMessageSender.SendMessage(checkoutHeader, "checkoutqueue");
                 await _cartRepository.ClearCart(checkoutHeader.UserId);
             }
             catch (Exception ex)

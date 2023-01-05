@@ -1,5 +1,6 @@
 using Assos.MessageBus;
 using Assos.Services.ShoppingCartAPI.DbContexts;
+using Assos.Services.ShoppingCartAPI.RabbitMQSender;
 using Assos.Services.ShoppingCartAPI.Repository;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
@@ -43,6 +44,7 @@ namespace Assos.Services.ShoppingCartAPI
             services.AddScoped<ICartRepository, CartRepository>();
             services.AddScoped<ICouponRepository,CouponRepository>();
             services.AddSingleton<IMessageBus, AzureServiceBusMessageBus>();
+            services.AddSingleton<IRabbitMQCardMessageSender,RabbitMQCardMessageSender>();
             services.AddControllers();
             services.AddHttpClient<ICouponRepository, CouponRepository>(u => u.BaseAddress =
                 new Uri(Configuration["ServiceUrls:CouponAPI"]));   

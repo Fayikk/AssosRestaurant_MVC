@@ -36,3 +36,4 @@ C:\Users\fayik\source\repos\AssosRestaurant\Assos.ServicesPaymentAPI\obj\Debug\n
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.ServicesPaymentAPI\obj\Debug\net6.0\Assos.ServicesPaymentAPI.pdb
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.ServicesPaymentAPI\obj\Debug\net6.0\Assos.ServicesPaymentAPI.genruntimeconfig.cache
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.ServicesPaymentAPI\obj\Debug\net6.0\ref\Assos.ServicesPaymentAPI.dll
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.ServicesPaymentAPI\bin\Debug\net6.0\RabbitMQ.Client.dll

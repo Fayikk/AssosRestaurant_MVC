@@ -21,7 +21,7 @@
                     <partial name="_LoginPartial"/>
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item pt-lg-1">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link"  asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                          <li class="nav-item pt-lg-1">
                             <a class="nav-link" asp-area="" asp-controller="Product" asp-action="ProductIndex">Product</a>
@@ -30,7 +30,10 @@
                             <a class="nav-link" asp-controller="Cart" asp-action="CartIndex">
                                 <i class="fas fa-shopping-cart"></i>
                             </a>
-                        </li>
+                        </li> 
+                       @* <li class="nav-item pt-lg-1">
+                            <button onclick="window.confirm('');" type="button" class="btn btn-primary">Primary</button>
+                        </li>*@
                         
                     </ul>
                 </div>

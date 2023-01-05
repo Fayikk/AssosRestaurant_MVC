@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MxK5dF0PDmy129Vxa8wqQW6KTFfEucIdw6XVuNC4zeA=",
+  "Hash": "ZE4dCgSWbNzu4JYgmGtd9lwmffQtnQFOFW4zHERNS28=",
   "Source": "Assos.Web",
   "BasePath": "_content/Assos.Web",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\fayik\\source\\repos\\AssosRestaurant\\Assos.Web\\wwwroot\\Images\\accept.png",
+      "SourceId": "Assos.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\fayik\\source\\repos\\AssosRestaurant\\Assos.Web\\wwwroot\\",
+      "BasePath": "_content/Assos.Web",
+      "RelativePath": "Images/accept.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\accept.png"
     },
     {
       "Identity": "C:\\Users\\fayik\\source\\repos\\AssosRestaurant\\Assos.Web\\wwwroot\\Images\\images.jpg",

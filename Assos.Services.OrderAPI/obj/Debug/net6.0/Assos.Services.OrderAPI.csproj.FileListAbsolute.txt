@@ -70,3 +70,4 @@ C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.OrderAPI\obj\Debug\ne
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.OrderAPI\obj\Debug\net6.0\Assos.Services.OrderAPI.pdb
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.OrderAPI\obj\Debug\net6.0\Assos.Services.OrderAPI.genruntimeconfig.cache
 C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.OrderAPI\obj\Debug\net6.0\ref\Assos.Services.OrderAPI.dll
+C:\Users\fayik\source\repos\AssosRestaurant\Assos.Services.OrderAPI\bin\Debug\net6.0\RabbitMQ.Client.dll
