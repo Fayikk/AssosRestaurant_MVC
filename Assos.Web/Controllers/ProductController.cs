@@ -81,7 +81,7 @@ namespace Assos.Web.Controllers
             return View(model);
         }
 
-        [Authorize(Roles ="Admin")]
+        [Authorize]
         public async Task<IActionResult> ProductDelete(int productId)
         {
             var accessToken = await HttpContext.GetTokenAsync("access_token");
@@ -95,7 +95,7 @@ namespace Assos.Web.Controllers
             return NotFound();
         }
         [HttpPost]
-        [Authorize(Roles = "Admin")]
+        [Authorize]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ProductDelete(ProductDto model)
         {

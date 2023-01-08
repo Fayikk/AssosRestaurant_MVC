@@ -39,7 +39,7 @@ namespace Assos.Services.PaymentAPI
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Mango.Services.PaymentAPI", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Assos.Services.PaymentAPI", Version = "v1" });
             });
         }
 
@@ -50,7 +50,7 @@ namespace Assos.Services.PaymentAPI
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Mango.Services.PaymentAPI v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Assos.Services.PaymentAPI v1"));
             }
 
             app.UseHttpsRedirection();
