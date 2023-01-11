@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Assos.Web.Controllers
-{
+{//
     public class ProductController : Controller
     {
         private readonly IProductService _productService;
